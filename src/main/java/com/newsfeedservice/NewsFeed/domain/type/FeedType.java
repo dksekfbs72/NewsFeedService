@@ -1,4 +1,4 @@
-package com.newsfeedservice.user.domain.type;
+package com.newsfeedservice.NewsFeed.domain.type;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
