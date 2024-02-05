@@ -23,6 +23,7 @@ public class Activity {
     private FeedType feedType;
     private String title;
     private Long userId;
+    private String userName;
     @Column(name = "to_column")
     private String to;
     private Long postId;
