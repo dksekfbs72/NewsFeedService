@@ -36,7 +36,7 @@ public class NewsFeedService {
     }
 
     private UserDto getUserInfo(String token) {
-        String url = "http://localhost:8080/user/info";
+        String url = "http://userService:8080/user/info";
         HttpHeaders headers = new HttpHeaders();
         headers.set("Authorization", token);
 
@@ -59,7 +59,7 @@ public class NewsFeedService {
     }
 
     private List<Long> getMyFriends(Long userId) {
-        String url = "http://localhost:8081/follow?userId="+userId;
+        String url = "http://activityService:8081/follow?userId="+userId;
 
         ResponseEntity<List<Long>> response = restTemplate.exchange(
                 url,
