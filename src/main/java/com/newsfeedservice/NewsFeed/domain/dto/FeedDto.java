@@ -25,7 +25,7 @@ public class FeedDto {
         return FeedDto.builder()
                 .type(activity.getFeedType())
                 .title(activity.getTitle())
-//                .userName(activity.getUser().getName())
+                .userName(activity.getUserName())
                 .to(activity.getTo())
                 .postId(activity.getPostId())
                 .commentId(activity.getCommentId())
